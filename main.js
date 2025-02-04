@@ -29,7 +29,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
       function addSignInRecord(name, rank, gender) {
         const row = document.createElement('tr');
-        row.innerHTML = `<td>${name}</td><td>${rank}</td><td>${gender}</td>`;
+        const nameCell = document.createElement('td');
+        const rankCell = document.createElement('td');
+        const genderCell = document.createElement('td');
+
+        nameCell.textContent = name;
+        rankCell.textContent = rank;
+        genderCell.textContent = gender;
+
+        row.appendChild(nameCell);
+        row.appendChild(rankCell);
+        row.appendChild(genderCell);
+
         signInList.appendChild(row);
       }
 
