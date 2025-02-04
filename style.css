@@ -1,0 +1,130 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0fff0; /* Light green background */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #app {
+      width: 90%;
+      max-width: 1100px;
+      background-color: #fff;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    #header {
+      background-color: #e0f2f1; /* Light teal header background */
+      color: #2e7d32; /* Dark green text */
+      padding: 25px;
+      border-bottom: 1px solid #ccc;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    #header h1 {
+      margin: 0;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    #logo {
+      font-size: 28px;
+      margin-right: 15px;
+    }
+
+    #content {
+      display: flex;
+      padding: 25px;
+    }
+
+    #signInSection,
+    #signedInListSection {
+      flex: 1;
+      margin: 0 10px;
+      background-color: #f7f7f7; /* Light grey background for the form */
+      border-radius: 25px;
+      padding: 20px;
+    }
+
+    #signedInListSection {
+      background-color: #fff; /* White background for the list */
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    select {
+      width: calc(100% - 20px);
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      font-size: 16px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #2e7d32; /* Dark green button */
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    button i {
+      margin-right: 10px;
+    }
+
+    button:hover {
+      background-color: #4caf50; /* Green button hover */
+    }
+
+    #signInTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    #signInTable th,
+    #signInTable td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #signInTable th {
+      background-color: #f0f8f0; /* Light green header row */
+    }
+
+    #clearListButton {
+      width: auto;
+      margin-top: 15px;
+    }
+
+    #signInButton {
+      background-color: #008000;
+    }

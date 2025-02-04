@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Boy Scouts Sign-In</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+      </head>
+      <body>
+        <div id="app">
+          <div id="header">
+            <h1>
+              <i class="fas fa-user-friends"></i> Scouting America Event Sign In
+            </h1>
+          </div>
+          <div id="content">
+            <div id="signInSection">
+              <h2>Sign In</h2>
+              <form id="signInForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="rank">Rank</label>
+                <select id="rank" name="rank">
+                  <option value="Scout">Scout</option>
+                  <option value="Tenderfoot">Tenderfoot</option>
+                  <option value="Second Class">Second Class</option>
+                  <option value="First Class">First Class</option>
+                  <option value="Star">Star</option>
+                  <option value="Life">Life</option>
+                  <option value="Eagle">Eagle</option>
+                </select>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+
+                <button type="submit" id="signInButton">
+                  <i class="fas fa-sign-in-alt"></i> Sign In
+                </button>
+              </form>
+            </div>
+            <div id="signedInListSection">
+              <h2>Recent Sign-ins</h2>
+              <table id="signInTable">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Gender</th>
+                  </tr>
+                </thead>
+                <tbody id="signInList"></tbody>
+              </table>
+              <button id="clearListButton">
+                <i class="fas fa-trash-alt"></i> Clear List
+              </button>
+            </div>
+          </div>
+        </div>
+        <script src="main.js"></script>
+      </body>
+    </html>
